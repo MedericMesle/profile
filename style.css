@@ -29,6 +29,55 @@ h3 {
 <button class="button-80" role="button">Button 80</button>*/
 
 /* CSS */
+
+p {
+  color: white;
+  line-height: 1.6;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+
+i {
+  color: #ffca03;
+}
+
+/* Customization with class only */
+
+.avatar {
+  object-fit: cover;
+  object-position: center;
+  background: #fff;
+  width: 170px;
+  height: 170px;
+  background-size: cover;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+.container {
+  background-image: src= "images/IMG_2972.jpg";
+  width: 400px;
+  margin: 40px auto;
+}
+
+.card {
+  background-color: #01757d;
+  background: linear-gradient(#103540, #b6e0e3);
+  opacity: 97%;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
 .btn-contact {
   background: #fff;
   backface-visibility: hidden;
@@ -39,6 +88,7 @@ h3 {
   color: #ff5403;
   cursor: pointer;
   display: inline-block;
+  align-self: center;
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -88,71 +138,11 @@ h3 {
   transform: translateY(0.125rem);
 }
 
-p {
-  color: white;
-  line-height: 1.6;
-  font-size: 16px;
-  font-weight: 800;
-  text-align: center;
-}
-
-i {
-  color: #ffca03;
-}
-
-/* Customization with class only */
-
-.avatar {
-  object-fit: cover;
-  object-position: center;
-  background: #fff;
-  width: 170px;
-  height: 170px;
-  background-size: cover;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-}
-.container {
-  background-image: src= "images/IMG_2972.jpg";
-  width: 400px;
-  margin: 40px auto;
-}
-
-.top-card {
-  background-color: #01757d;
-  background: linear-gradient(#103540, #b6e0e3);
-  opacity: 97%;
-  padding: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
 .bottom-phrase {
   color: #ff5403;
 }
-
-.bottom-card {
-  background-color: #01757d;
-  background: linear-gradient(#084448, #b6e0e3);
-  opacity: 95%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-size: cover;
-  background-position: center;
-  height: 150px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+#contact-phrase {
+  text-align: center;
 }
 .social-phrase {
   color: #ff5403;
@@ -162,20 +152,50 @@ i {
   font-weight: 1000;
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline-block;
-}
-
-.fab.fa-github,
-.fab.fa-twitter {
-  font-size: 50px;
-  text-align: center;
-  margin-left: 100px;
+.fab,
+fa-github-square {
   color: #fff;
+  font-size: 40px;
+}
+
+.social {
+  display: flex;
+  margin-top: auto;
+  position: sticky;
+  margin-bottom: 0%;
+  padding: 0%;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  color: white;
+  flex: 1 1 auto;
+  user-select: none;
+  background: 0;
+  font-size: 13px;
+  border: 0;
+  padding: 15px 5px;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Jost", sans-serif;
+  font-size: x-large;
+  font-weight: 500;
+  text-decoration: none;
+  outline: 0;
+  border-bottom: 5px solid transparent;
+}
+
+.button:hover {
+  color: #ff5403;
+  border-bottom: 5px solid #ff5403;
+  background: linear-gradient(
+    to bottom,
+    rgba(231, 191, 127, 0) 0%,
+    rgba(216, 99, 45, 0.2) 44%,
+    rgba(253, 230, 209, 0.883) 100%
+  );
 }
 
 /* Responsive Profile Design */
